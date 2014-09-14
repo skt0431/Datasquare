@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>List in Console</title>
+<!-- JQuery -->
+<script src="common/theme/scripts/plugins/system/jquery.min.js"></script>
+<style type="text/css">
+thead {color:green;text-align:center;}
+tbody {color:blue;}
+</style>
+<script type="text/javascript">
+	$(document).ready(
+			function() {
+				getData("/");
+
+				$('#list tr td b').live("click", function() {
+					console.log($(this).text());
+					getData($(this).text())
+				});
+				
+				$('#list tr td i').live("click", function() {
+					console.log($(this).text());
+					getText($(this).text())
+				});
+				
+				$('#home').live("click", function() {
+					getData("/")
+				});
+
+				function getData(request) {
+					$.ajax({
+						type : 'GET',
+						url : "rest/search/Check",
+						data : {
+							feature : request
+						},
+						dataType : 'json',
+						beforeSend : function() {
+							$("#status").text("List in loading . . . . . .");
+							$("table").hide();
+							$("#list").empty();
+							$("#text").hide();
+							$("#heading").hide();
+						},
+						complete : function() {
+							$("#status").text("check the bellow table");
+							$("table").show();
+							$("#heading").show();
+						},
+						success : function(data) {
+							
+							for ( var i = 0; i < data.results.length; i++) {
+								if(data.results[i].type=='-')
+									$("#list").append(
+											'<tr><td>' + "Dir"
+													+ '</td><td><b><a href="#">' 
+													+ data.results[i].filename
+													+ '</a></b></td></tr>');
+								else	
+									$("#list").append(
+											'<tr><td>' + "File"
+													+ '</td><td><i><a href="#">' 
+													+ data.results[i].filename
+													+ '</a></i></td></tr>');
+							}
+						},
+						error : function(xhr, data, statusText, errorThrown) {
+							// log the error to the console
+							console.log("The following error occured: "
+									+ statusText, errorThrown);
+						}
+
+					});
+				}
+				
+				function getText(request) {
+					$.ajax({
+						type : 'GET',
+						url : "rest/search/getText",
+						data : {
+							feature : request
+						},
+						dataType : 'json',
+						beforeSend : function() {
+							$("#status").text("Data in loading . . . . . .");
+							$("table").hide();
+							$("#text").empty();
+							$("#heading").hide();
+						},
+						complete : function() {
+							$("#status").text("check the data below Content");
+							$("#text").show();
+						},
+						success : function(data) {
+							$("#text").append(data.results[0].data)
+							console.log(data);
+						},
+						error : function(xhr, data, statusText, errorThrown) {
+							// log the error to the console
+							console.log("The following error occured: "
+									+ statusText, errorThrown);
+						}
+
+					});
+				}
+			});
+</script>
+</head>
+<body>
+	<button type="button" id="home">Home</button>
+	<button type="button" id="Upload"><a href="upload.html">upload</a></button>
+	<button type="button" id="runQuery"><a href="runquery.html">Run Hive Query</a></button>
+	<h1 id="status">List in loading . . . . . .</h1>
+	<div id="heading">
+		<H5>
+			<b><i>List of File / Folders</b></i>
+		</H5>
+	</div>
+	<table>
+		<thead>
+			<tr>
+				<th>Type</th>
+				<th>File Name</th>
+			</tr>
+		</thead>
+		<tbody id="list">
+
+		</tbody>
+	</table>
+	<div id="text">
+	</div>
+</body>
+</html>

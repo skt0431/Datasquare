@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="ie lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html class="ie gt-ie8"> <![endif]-->
+<!--[if !IE]><!--><html><!-- <![endif]-->
+<head>
+	<title>DataSquare</title>
+	
+	<!-- Meta -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+	
+	<!-- Bootstrap -->
+	<link href="common/bootstrap/css/bootstrap.css" rel="stylesheet" />
+	<link href="common/bootstrap/css/responsive.css" rel="stylesheet" />
+	
+	<!-- Glyphicons Font Icons -->
+	<link href="common/theme/css/glyphicons.css" rel="stylesheet" />
+	
+	<!-- Uniform Pretty Checkboxes -->
+	<link href="common/theme/scripts/plugins/forms/pixelmatrix-uniform/css/uniform.default.css" rel="stylesheet" />
+	
+	<!-- Bootstrap Extended -->
+	<link href="common/bootstrap/extend/jasny-bootstrap/css/jasny-bootstrap.min.css" rel="stylesheet">
+	<link href="common/bootstrap/extend/jasny-bootstrap/css/jasny-bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="common/bootstrap/extend/bootstrap-wysihtml5/css/bootstrap-wysihtml5-0.0.2.css" rel="stylesheet">
+	<link href="common/bootstrap/extend/bootstrap-select/bootstrap-select.css" rel="stylesheet" />
+	<link href="common/bootstrap/extend/bootstrap-toggle-buttons/static/stylesheets/bootstrap-toggle-buttons.css" rel="stylesheet" />
+	
+	<!-- Select2 Plugin -->
+	<link href="common/theme/scripts/plugins/forms/select2/select2.css" rel="stylesheet" />
+	
+	<!-- DateTimePicker Plugin -->
+	<link href="common/theme/scripts/plugins/forms/bootstrap-datetimepicker/css/datetimepicker.css" rel="stylesheet" />
+	
+	<!-- JQueryUI -->
+	<link href="common/theme/scripts/plugins/system/jquery-ui/css/smoothness/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" />
+	
+	<!-- MiniColors ColorPicker Plugin -->
+	<link href="common/theme/scripts/plugins/color/jquery-miniColors/jquery.miniColors.css" rel="stylesheet" />
+	
+	<!-- Notyfy Notifications Plugin -->
+	<link href="common/theme/scripts/plugins/notifications/notyfy/jquery.notyfy.css" rel="stylesheet" />
+	<link href="common/theme/scripts/plugins/notifications/notyfy/themes/default.css" rel="stylesheet" />
+	
+	<!-- Gritter Notifications Plugin -->
+	<link href="common/theme/scripts/plugins/notifications/Gritter/css/jquery.gritter.css" rel="stylesheet" />
+	
+	<!-- Easy-pie Plugin -->
+	<link href="common/theme/scripts/plugins/charts/easy-pie/jquery.easy-pie-chart.css" rel="stylesheet" />
+
+	<!-- Google Code Prettify Plugin -->
+	<link href="common/theme/scripts/plugins/other/google-code-prettify/prettify.css" rel="stylesheet" />
+
+	<!-- DataTables Plugin -->
+	<link href="common/theme/scripts/plugins/tables/DataTables/media/css/DT_bootstrap.css" rel="stylesheet" />
+
+	<!-- Main Theme Stylesheet :: CSS -->
+	<link href="common/theme/css/style-dark.css?1369753443" rel="stylesheet" />
+	
+		<!-- JQuery -->
+	<script src="common/theme/scripts/plugins/system/jquery.min.js"></script>
+	
+	<!-- JQueryUI -->
+	<script src="common/theme/scripts/plugins/system/jquery-ui/js/jquery-ui-1.9.2.custom.min.js"></script>
+	
+	<!-- LESS.js Library -->
+	<script src="common/theme/scripts/plugins/system/less.min.js"></script>
+	
+	
+		<!-- JQuery -->
+	<script src="common/theme/scripts/plugins/system/jquery.min.js"></script>
+	
+	<!-- JQueryUI -->
+	<script src="common/theme/scripts/plugins/system/jquery-ui/js/jquery-ui-1.9.2.custom.min.js"></script>
+	
+	<!-- JQueryUI Touch Punch -->
+	<!-- small hack that enables the use of touch events on sites using the jQuery UI user interface library -->
+	<script src="common/theme/scripts/plugins/system/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+	
+	
+	<!-- Modernizr -->
+	<script src="common/theme/scripts/plugins/system/modernizr.js"></script>
+	
+	<!-- Bootstrap -->
+	<script src="common/bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- SlimScroll Plugin -->
+	<script src="common/theme/scripts/plugins/other/jquery-slimScroll/jquery.slimscroll.min.js"></script>
+	
+	<!-- Common Demo Script -->
+	<script src="common/theme/scripts/demo/common.js?1369753443"></script>
+	
+	<!-- Holder Plugin -->
+	<script src="common/theme/scripts/plugins/other/holder/holder.js"></script>
+	
+	<!-- Uniform Forms Plugin -->
+	<script src="common/theme/scripts/plugins/forms/pixelmatrix-uniform/jquery.uniform.min.js"></script>
+
+	<!-- Global -->
+	<script>
+	var basePath = 'common/';
+	</script>
+	
+	<!-- Bootstrap Extended -->
+	<script src="common/bootstrap/extend/bootstrap-select/bootstrap-select.js"></script>
+	<script src="common/bootstrap/extend/bootstrap-toggle-buttons/static/js/jquery.toggle.buttons.js"></script>
+	<script src="common/bootstrap/extend/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.min.js"></script>
+	<script src="common/bootstrap/extend/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
+	<script src="common/bootstrap/extend/jasny-bootstrap/js/bootstrap-fileupload.js"></script>
+	<script src="common/bootstrap/extend/bootbox.js"></script>
+	<script src="common/bootstrap/extend/bootstrap-wysihtml5/js/wysihtml5-0.3.0_rc2.min.js"></script>
+	<script src="common/bootstrap/extend/bootstrap-wysihtml5/js/bootstrap-wysihtml5-0.0.2.js"></script>
+	
+	<!-- Google Code Prettify -->
+	<script src="common/theme/scripts/plugins/other/google-code-prettify/prettify.js"></script>
+	
+	<!-- Gritter Notifications Plugin -->
+	<script src="common/theme/scripts/plugins/notifications/Gritter/js/jquery.gritter.min.js"></script>
+	
+	<!-- Notyfy Notifications Plugin -->
+	<script src="common/theme/scripts/plugins/notifications/notyfy/jquery.notyfy.js"></script>
+	
+	<!-- MiniColors Plugin -->
+	<script src="common/theme/scripts/plugins/color/jquery-miniColors/jquery.miniColors.js"></script>
+	
+	<!-- DateTimePicker Plugin -->
+	<script src="common/theme/scripts/plugins/forms/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+	<!-- Cookie Plugin -->
+	<script src="common/theme/scripts/plugins/system/jquery.cookie.js"></script>
+	
+	<!-- Colors -->
+	<script>
+	var primaryColor = '#8ec657',
+		dangerColor = '#b55151',
+		successColor = '#609450',
+		warningColor = '#ab7a4b',
+		inverseColor = '#45484d';
+	</script>
+	
+	<!-- Themer -->
+	<script>
+	var themerPrimaryColor = primaryColor;
+	</script>
+	<script src="common/theme/scripts/demo/themer.js"></script>
+	
+	<!-- Twitter Feed -->
+	<script src="common/theme/scripts/demo/twitter.js"></script>
+	
+	<!-- Easy-pie Plugin -->
+	<script src="common/theme/scripts/plugins/charts/easy-pie/jquery.easy-pie-chart.js"></script>
+	
+	<!-- Sparkline Charts Plugin -->
+	<script src="common/theme/scripts/plugins/charts/sparkline/jquery.sparkline.min.js"></script>
+	
+	<!-- Ba-Resize Plugin -->
+	<script src="common/theme/scripts/plugins/other/jquery.ba-resize.js"></script>
+	
+	
+	<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script><![endif]-->
+	<link rel="stylesheet" type="text/css" href="css/jquery.jqplot.css" />
+	<script type="text/javascript" src="js/jquery.jqplot.min.js"></script>
+	<script type="text/javascript" src="js/jqplot.barRenderer.min.js"></script>
+	<script type="text/javascript" src="js/jqplot.pieRenderer.min.js"></script>
+	<script type="text/javascript" src="js/jqplot.categoryAxisRenderer.min.js"></script>
+	<script type="text/javascript" src="js/jqplot.pointLabels.min.js"></script>
+	<script type="text/javascript" src="js/jqplot.dateAxisRenderer.min.js"></script>
+	<script type="text/javascript" src="js/jqplot.highlighter.min.js"></script>
+	<script type="text/javascript" src="js/jqplot.dateAxisRenderer.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		feat = "browsers_desktop";
+		feat2 = "browsers_mobile";
+		getTableData1(feat); //call to get data
+		getTableData2(feat2); //call to get data
+		//getGraphs(feat);
+		generateChart1();
+		generateChart2();
+		
+		$('#fmstable').dataTable();
+		function getTableData1(feat) {
+			/* ajax call to retrieve the data*/
+			$.ajax({
+				url : 'rest/search/activitystats?feature='+feat,
+				//data : {feature : feat},
+				datatype : 'json',
+				type : "GET",
+				cache : false,
+				contentType : 'application/x-www-form-urlencoded',
+				success : function(data) {
+					myObject = eval(data);
+					for ( var k = 0; k < myObject.results.length ; k++){
+						$('#fmstable').dataTable().fnAddData( [myObject.results[k].evtdate,myObject.results[k].browser,myObject.results[k].hits ] );
+					}
+				},
+				error : function(xhr, data, statusText,errorThrown) {
+					// log the error to the console
+					console.log("The following error occured: "+ statusText, errorThrown);
+				}
+			});
+		}
+		
+		$('#mobiletable').dataTable();
+		function getTableData2(feat2) {
+			/* ajax call to retrieve the data*/
+			$.ajax({
+				url : 'rest/search/activitystats?feature='+feat2,
+				//data : {feature : feat},
+				datatype : 'json',
+				type : "GET",
+				cache : false,
+				contentType : 'application/x-www-form-urlencoded',
+				success : function(data) {
+					myObject = eval(data);
+					for ( var k = 0; k < myObject.results.length ; k++){
+						$('#mobiletable').dataTable().fnAddData( [myObject.results[k].evtdate,myObject.results[k].browser,myObject.results[k].hits ] );
+					}
+				},
+				error : function(xhr, data, statusText,errorThrown) {
+					// log the error to the console
+					console.log("The following error occured: "+ statusText, errorThrown);
+				}
+			});
+		}
+		
+		//Declaring all the required variables
+		var s1 = [ [ 2002, 112000 ], [ 2003, 122000 ],[ 2004, 104000 ], [ 2005, 99000 ],[ 2006, 121000 ], [ 2007, 148000 ],[ 2008, 114000 ], [ 2009, 133000 ],[ 2010, 161000 ], [ 2011, 173000 ] ];
+		var s2 = [ [ 2002, 10200 ], [ 2003, 10800 ],[ 2004, 11200 ], [ 2005, 11800 ],[ 2006, 12400 ], [ 2007, 12800 ],[ 2008, 13200 ], [ 2009, 12600 ],[ 2010, 13100 ] ];
+		var s3 = [ [ 1, 0.60 ], [ 2, 0.40 ], [ 3, 0.71 ],[ 4, 0.80 ], [ 5, 0.20 ] ];
+	
+		var ticks2 = [ '0', '50000', '100000', '150000','200000', '250000', '300000', '350000' ];
+		var ticks3 = [ '0',  '15000', '30000',  '45000',  '60000', '75000', '90000' ];
+		var tickers = ['0.5', '0.52', '0.54', '0.56', '0.58', '0.6','0.62' ];
+		var tickss = [ 'February', 'March', 'April', 'May','June', 'July', 'August', 'September','October', 'November', 'December', 'January' ];
+		var tickss2 = [ 'February-12', 'March-12', 'April-12', 'May-12','June-12', 'July-12', 'August-12', 'September-12','October-12', 'November-12', 'December-12', 'January-13','February-13', 'March-13' ];
+		
+		//Function to Load the Graphs
+		function getGraphs(feat) {
+			$("#charts").empty();
+			$("#charts").append('<div id="chart1" class="chart"></div>');
+			$("#charts").show();
+			$("#chart1").show();
+
+			/* ajax call to retrieve the data*/
+			$.ajax({
+						url : 'rest/search/activitygraphs?feature='+feat,
+						//data : {feature : feat},
+						datatype : 'json',
+						type : "GET",
+						cache : false,
+						contentType : 'application/x-www-form-urlencoded',
+						success : function(data) {
+							var myArray1 = new Array();
+							var myArray2 = new Array();
+							var myArray3 = new Array();
+							var myData = data;
+							for ( var i = 0; i < tickss2.length; i++) {
+								for ( var k = 0; k < myData.results.length; k++) {
+									if (tickss2[i] == myData.results[k].month) {
+										myArray2
+												.push(myData.results[k].bookedq);
+										myArray1
+												.push(myData.results[k].totalq);
+										myArray3
+												.push(myData.results[k].ratio);
+									}
+								}
+							}
+							plot1 = $.jqplot(
+											"chart1",
+											[ myArray1,
+													myArray2,
+													myArray3 ],
+											{
+												// Turns on animatino for all series in this plot.
+												animate : true,
+												// Will animate plot on calls to plot1.replot({resetAxes:true})
+												animateReplot : true,
+												seriesDefaults : {
+													renderer : $.jqplot.BarRenderer,
+													pointLabels : {
+														show : true
+													},
+													rendererOptions : {
+														// Speed up the animation a little bit.
+														// This is a number of milliseconds.  
+														// Default for bar series is 3000.  
+														animation : {
+															speed : 2500
+														},
+														highlightMouseOver : false
+													}
+												},
+												series : [
+														{},
+														{},
+														{
+															disableStack : true,//otherwise it wil be added to values of previous series
+															renderer : $.jqplot.LineRenderer,
+															yaxis : 'y2axis',
+															lineWidth : 2,
+															pointLabels : {
+																show : false
+															},
+															markerOptions : {
+																size : 5
+															}
+														} ],
+												axesDefaults : {
+													pad : 0
+												},
+												axes : {
+													// These options will set up the x axis like a category axis.
+													xaxis : {
+														renderer : $.jqplot.CategoryAxisRenderer,
+														label : 'Months',
+														//autoscale: true,
+														 tickOptions: {
+															     angle: -30
+															    },
+														ticks : tickss2
+													},
+													yaxis : {
+														//renderer: $.jqplot.CategoryAxisRenderer,
+														labelOptions : {
+															angle : 270
+														},
+														tickOptions : {
+															formatString : "$%'d"
+														},
+														//autoscale: true
+														ticks : ticks3
+													},
+													y2axis : {
+														//renderer: $.jqplot.CategoryAxisRenderer,
+														//autoscale: true
+														ticks : tickers
+													}
+												},
+												legend : {
+													labels : [
+															'Total Quotes',
+															'Booked Quotes',
+															'Ratio' ],
+													show : true,
+													location : 'ne',
+													placement : 'insideGrid'
+												}
+											});
+						},
+						error : function(xhr, data, statusText,errorThrown) {
+							// log the error to the console
+							console.log("The following error occured: "+ statusText,errorThrown);
+						}
+					});
+		}
+		
+		function generateChart1(){
+			var colNames = [];
+			var colData = [];
+			pieData = [];
+			//ajax call to retrieve the data
+			$.ajax({
+						url : "rest/search/activitypie?feature=browsers_d",
+						//data : {feature : "browsers_d"},
+						type : "GET",
+						datatype : "json",
+						cache : false,
+						contentType : 'application/x-www-form-urlencoded',
+						success : function(data) {
+							$("#hovertable").empty();
+							$("#chart1").empty();
+							if (typeof (data) != "string" && (data.results.length == 0 || data == null || typeof (data) == "undefined")) {
+								alert("Data is not available for  Activities. Please try later.");
+							} else {
+								var manualData = eval(data);
+								var JSON2 = manualData.results[0];
+								for ( var k = 0; k < data.results.length; k++) {
+									colData.push(parseInt(data.results[k].hits));
+									colNames.push(data.results[k].browser);
+								}
+								for ( var i = 0; i < colData.length; i++) {
+									pieData[i] = Array(colNames[i], colData[i]);
+								}
+								//alert(pieData);
+								$("#chart1").append('<div id="chartp" style="height: 251px;"></div>');
+								var chartp = jQuery.jqplot ('chartp', [pieData], 
+							            {
+							              seriesDefaults: {
+							                renderer: jQuery.jqplot.PieRenderer, 
+							                rendererOptions: {
+							                  // Turn off filling of slices.
+							                  fill: true,
+							                  showDataLabels: true, 
+							                  // Add a margin to seperate the slices.
+							                  //sliceMargin: 10, 
+							                  // stroke the slices with a little thicker line.
+							                 // lineWidth: 3 
+							                }
+							              }, 
+							              legend: { show:true, location: 'e' }
+							            }
+							   );
+							}
+							
+						},
+						error : function(xhr, data, statusText,errorThrown) {
+							// log the error to the console
+							console.log("The following error occured: "+ statusText,errorThrown, data);
+						}
+					});
+		}
+		function generateChart2(){
+			var colNames = [];
+			var colData = [];
+			pieData2 =[];
+			//ajax call to retrieve the data
+			$.ajax({
+						url : "rest/search/activitypie?feature=browsers_m",
+						//data : {feature : "browsers_m"},
+						type : "GET",
+						datatype : "json",
+						cache : false,
+						contentType : 'application/x-www-form-urlencoded',
+						success : function(data) {
+							$("#hovertable2").empty();
+							$("#chart2").empty();
+							if (typeof (data) != "string" && (data.results.length == 0 || data == null || typeof (data) == "undefined")) {
+								alert("Data is not available for  Activities. Please try later.");
+							} else {
+								for ( var k = 0; k < data.results.length; k++) {
+									colData.push(parseInt(data.results[k].hits));
+									colNames.push(data.results[k].browser);
+								}
+								for ( var i = 0; i < colData.length; i++) {
+									pieData2[i] = Array(colNames[i], colData[i]);
+								}
+								//alert(pieData2);
+								$("#chart2").append('<div id="chartp2" style="height: 251px;"></div>');	
+								var chartp2 = jQuery.jqplot ('chartp2', [pieData2], 
+							            {
+							              seriesDefaults: {
+							                renderer: jQuery.jqplot.PieRenderer, 
+							                rendererOptions: {
+							                  // Turn off filling of slices.
+							                  fill: true,
+							                  showDataLabels: true, 
+							                  // Add a margin to seperate the slices.
+							                //  sliceMargin: 5, 
+							                  // stroke the slices with a little thicker line.
+							                 // lineWidth: 3
+							                }
+							              }, 
+							              legend: { show:true, location: 'e' }
+							            }
+							   );
+							}
+							
+						},
+						error : function(xhr, data, statusText,errorThrown) {
+							// log the error to the console
+							console.log("The following error occured: "+ statusText,errorThrown, data);
+						}
+					});
+		}
+
+	});
+	</script>
+</head>
+<body class="">
+		
+		<!-- Main Container Fluid -->
+	<div class="container-fluid fluid menu-left">
+		
+		<!-- Top navbar (note: add class "navbar-hidden" to close the navbar by default) -->
+		<div class="navbar main hidden-print">
+		
+			<!-- Wrapper -->
+			<div class="wrapper">
+			
+							
+								<!-- Menu Toggle Button -->
+				<button type="button" class="btn btn-navbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				<!-- // Menu Toggle Button END -->
+								
+								<!-- Top Menu -->
+				<ul class="topnav pull-left tn1 hidden-phone">
+				
+										<!-- Themer -->
+					<li><a href="#themer" data-toggle="collapse" class="glyphicons eyedropper single-icon"><i></i></a></li>
+					<!-- // Themer END -->
+										
+										
+					<li class="dropdown dd-1 dd-2">
+						<a href="" data-toggle="dropdown">Notifications <span class="count">3</span></a>
+						<ul class="dropdown-menu pull-left">
+							<li><a href="#" class="glyphicons envelope"><i></i> New Email</a></li>
+                            <li><a href="#" class="glyphicons chat"><i></i> 5 Messages</a></li>
+                            <li><a href="#" class="glyphicons conversation"><i></i> 1 New Reply</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+				<!-- // Top Menu END -->
+								
+				<!-- Top Menu Right -->
+				<ul class="topnav pull-right">
+				
+					<!-- Language menu -->
+					<li class="hidden-phone dropdown dd-1 dd-flags" id="lang_nav">
+						<a href="#" data-toggle="dropdown"><img src="common/theme/images/lang/en.png" alt="en" /></a>
+				    	<ul class="dropdown-menu pull-left">
+				      		<li class="active"><a href="?page=index&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark&amp;lang=en" title="English"><img src="common/theme/images/lang/en.png" alt="English"> English</a></li>
+				      		<li><a href="?page=index&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark&amp;lang=ro" title="Romanian"><img src="common/theme/images/lang/ro.png" alt="Romanian"> Romanian</a></li>
+				      		<li><a href="?page=index&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark&amp;lang=it" title="Italian"><img src="common/theme/images/lang/it.png" alt="Italian"> Italian</a></li>
+				      		<li><a href="?page=index&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark&amp;lang=fr" title="French"><img src="common/theme/images/lang/fr.png" alt="French"> French</a></li>
+				      		<li><a href="?page=index&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark&amp;lang=pl" title="Polish"><img src="common/theme/images/lang/pl.png" alt="Polish"> Polish</a></li>
+				    	</ul>
+					</li>
+					<!-- // Language menu END -->
+				
+					
+					<!-- Profile / Logout menu -->
+					<li class="account dropdown dd-1">
+												<a data-toggle="dropdown" href="my_account.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark" class="glyphicons logout lock"><span class="hidden-phone">Tony Stark</span><i></i></a>
+						<ul class="dropdown-menu pull-right">
+							<li><a href="my_account.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark" class="glyphicons cogwheel">Settings<i></i></a></li>
+							<li><a href="my_account.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark" class="glyphicons camera">My Photos<i></i></a></li>
+							<li class="profile">
+								<span>
+									<span class="heading">Profile <a href="my_account.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark" class="pull-right">edit</a></span>
+									<span class="img"></span>
+									<span class="details">
+										<a href="my_account.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark">Tony Stark</a>
+										contact@inndata.in
+									</span>
+									<span class="clearfix"></span>
+								</span>
+							</li>
+							<li>
+								<span>
+									<a class="btn btn-default btn-mini pull-right" href="login.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark">Sign Out</a>
+								</span>
+							</li>
+						</ul>
+											</li>
+					<!-- // Profile / Logout menu END -->
+					
+				</ul>
+				<!-- // Top Menu Right END -->
+				
+								
+				<div class="clearfix"></div>
+			</div>
+			<!-- // Wrapper END -->
+			
+			<span class="toggle-navbar"></span>
+		</div>
+		<!-- Top navbar END -->
+		
+				<!-- Sidebar menu & content wrapper -->
+		<div id="wrapper">
+		
+		<!-- Sidebar Menu -->
+		<div id="menu" class="hidden-phone hidden-print">
+		
+			<!-- Brand -->
+			<a href="index.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark" class="appbrand">Shipping Data Easy!<span></span></a>
+		
+			<!-- Scrollable menu wrapper with Maximum height -->
+			<div class="slim-scroll" data-scroll-height="800px">
+			
+			<!-- Sidebar Profile -->
+			<span class="profile">
+				<p>Welcome <a href="my_account.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark">Tony Stark</a></p>
+			</span>
+			<!-- // Sidebar Profile END -->
+			
+			<!-- Regular Size Menu -->
+			<ul class="menu-0">
+			
+								
+								<!-- Menu Regular Item -->
+				<li class="glyphicons display active"><a href="index.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark"><i></i><span>Dashboard</span></a></li>
+				
+				<li class="glyphicons coins"><a href="revenue.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark"><i></i><span>Revenue Metrics</span></a></li>
+				<li class="glyphicons truck "><a href="service.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark"><i></i><span>Service Metrics</span></a></li>
+				
+				
+				<!-- Web Analytics START-->
+				<li class="hasSubmenu">
+				
+					<a data-toggle="collapse" class="glyphicons globe" href="#menu_analytics"><i></i><span>Web Analytics</span></a>
+					<ul class="collapse" id="menu_analytics">
+						<li class=""><a href="fms.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark"><span>FMS</span></a></li>
+						<li class=""><a href="fmsplc.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark"><span>FMSPLC</span></a></li>
+						<li class=""><a href="fmsglobalnet.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark"><span>FMS GlobalNet</span></a></li>
+						<li class=""><a href="browsers.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark"><span>Browsers</span></a></li>
+						<li class=""><a href="statuscodes.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark"><span>Status Codes</span></a></li>
+						<li class=""><a href="spiders.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark"><span>Spiders</span></a></li>
+					</ul>
+				</li>
+				<!-- Web Analytics END-->
+				
+			</ul>
+			<div class="clearfix"></div>
+			<!-- // Regular Size Menu END -->
+			
+			<ul class="menu-1">
+				<li class="hasSubmenu active">
+					<a class="glyphicons wifi_alt" href="#menu-recent-stats" data-toggle="collapse"><i></i><span>Recent stats</span></a>
+					<ul class="collapse in" id="menu-recent-stats">
+						<li><a class="glyphicons envelope" href="#"><i></i><span>5 New Enquiries</span></a></li>
+						<li><a class="glyphicons chat" href="#"><i></i><span>New Message on 19 Jan</span></a></li>
+						<li><a class="glyphicons user_add" href="#"><i></i><span>10 Users Subscribed</span></a></li>
+						<li><a class="glyphicons cart_in" href="#"><i></i><span>2 Orders worth of &dollar;239</span></a></li>
+						<li><a class="glyphicons single circle_plus" href="#"><i></i><span>View all</span></a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="clearfix"></div>
+			<div class="separator bottom"></div>
+			
+						<!-- Sidebar Stats Widgets -->
+			<div class="widget-sidebar-stats">
+				<strong>3,540</strong>
+				<span>Shipments</span>
+				<span class="pull-right sparkline"></span>
+				<div class="clearfix"></div>
+			</div>
+			<div class="widget-sidebar-stats">
+				<strong>&dollar;2,510,402</strong>
+				<span>Cost</span>
+				<span class="pull-right sparkline"></span>
+				<div class="clearfix"></div>
+			</div>
+			<div class="separator bottom"></div>
+			<!-- // Sidebar Stats Widgets END -->
+			
+			<!-- Stats Widget -->
+			<a href="" class="widget-stats widget-stats-2 widget-stats-easy-pie widget-sidebar-stats txt-single">
+				<div data-percent="90" class="easy-pie primary"><span class="value">90</span>%</div>
+				<span class="txt">Shipments Delivered</span>
+				<div class="clearfix"></div>
+			</a>
+			<!-- // Stats Widget END -->
+			
+						
+						
+						
+			</div>
+			<!-- // Scrollable Menu wrapper with Maximum Height END -->
+			
+		</div>
+		<!-- // Sidebar Menu END -->
+				
+		<!-- Content -->
+		<div id="content"">
+		<h3>Website Traffic</h3>
+		<div class="innerLR">
+			<!-- Tabs -->
+			<div class="widget widget-tabs  row-fluid row-merge" id="maps_vector_tabs">
+			
+				<!-- Tabs Heading -->
+				<div class="widget-head ">
+					<ul>
+						<li class="active"><a href="#tab1" data-toggle="tab" data-init="1">Traffic Resources</a></li>
+						<li><a href="#tab2" data-toggle="tab">Desktop Traffic</a></li>
+						<li><a href="#tab3" class="glyphicons user"  data-toggle="tab">Mobile Traffic</a></li>
+					</ul>
+				</div>
+				<!-- // Tabs Heading END -->
+				
+					<div class="widget-body span9">
+						<div class="tab-content">
+						
+							<!-- Tab content -->
+							<div class="tab-pane active" id="tab1">
+								<div class="span6">
+							
+									<!-- Traffic Sources Pie Chart -->
+									<div class="widget" data-toggle="collapse-widget" data-collapse-closed="false">
+										<div class="widget-head">
+											<h4 class="heading glyphicons pie_chart"><i></i>Desktop Traffic sources</h4>
+										</div>
+										<div class="widget-body">
+											<div id="chart1"></div>
+										</div>
+									</div>
+									<!-- // Traffic Sources Pie Chart END -->
+									
+								</div>
+								<div class="span6">
+							
+									<!-- Traffic Sources Pie Chart -->
+									<div class="widget" data-toggle="collapse-widget" data-collapse-closed="false">
+										<div class="widget-head">
+											<h4 class="heading glyphicons pie_chart"><i></i>Mobile Traffic sources</h4>
+										</div>
+										<div class="widget-body">
+											<div id="chart2"></div>
+										</div>
+									</div>
+									<!-- // Traffic Sources Pie Chart END -->
+									
+								</div>
+							</div>
+							<!-- // Tab content END -->
+							
+							<!-- Tab content -->
+							<div class="tab-pane" id="tab2">
+										<!--  <div id="fmtable" class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 319px;"></div> -->
+										<table id="fmstable" class="dynamicTable table table-striped table-bordered table-condensed"><thead><tr><th>Date</th><th>Browser</th><th>Hits</th></tr></thead>
+										
+										</table> 
+							</div>
+							<!-- // Tab content END -->
+							
+							
+							
+							<!-- Tab content -->
+							<div class="tab-pane" id="tab3">
+								
+										<!--  <div id="fmtable" class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 319px;"></div> -->
+										<table id="mobiletable" class="dynamicTable table table-striped table-bordered table-condensed"><thead><tr><th>Date</th><th>Browser</th><th>Hits</th></tr></thead>
+										
+										</table> 
+									
+							
+							</div>
+							<!-- // Tab content END -->
+											
+						</div>
+						
+					</div>
+				</div>
+				<!-- // Tabs END -->
+		</div>	
+		</div>
+		<!-- // Content END -->
+		
+				</div>
+			<div class="clearfix"></div>
+		<!-- // Sidebar menu & content wrapper END -->
+				
+		<div id="footer" class="hidden-print">
+			
+			<!--  Copyright Line -->
+			<div class="copy">&copy; 2014 - <a href="http://www.inndata.in">innData</a> - All Rights Reserved. </div>
+			<!--  End Copyright Line -->
+	
+		</div>
+		<!-- // Footer END -->
+		
+	</div>
+	<!-- // Main Container Fluid END -->
+	
+
+<!-- Themer -->
+<div id="themer" class="collapse">
+	<div class="wrapper">
+		<span class="close2">&times; close</span>
+		<h4>Themer <span>color options</span></h4>
+		<ul>
+			<li>Theme: <select id="themer-theme" class="pull-right"></select><div class="clearfix"></div></li>
+			<li>Primary Color: <input type="text" data-type="minicolors" data-default="#ffffff" data-slider="hue" data-textfield="false" data-position="left" id="themer-primary-cp" /><div class="clearfix"></div></li>
+			<li>
+				<span class="link" id="themer-custom-reset">reset theme</span>
+				<span class="pull-right"><label>advanced <input type="checkbox" value="1" id="themer-advanced-toggle" /></label></span>
+			</li>
+		</ul>
+		<div id="themer-getcode" class="hide">
+			<hr class="separator" />
+			<button class="btn btn-primary btn-small pull-right btn-icon glyphicons download" id="themer-getcode-less"><i></i>Get LESS</button>
+			<button class="btn btn-inverse btn-small pull-right btn-icon glyphicons download" id="themer-getcode-css"><i></i>Get CSS</button>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- // Themer END -->
+
+	<!-- Modal Gallery -->
+	<div id="modal-gallery" class="modal modal-gallery hide fade hidden-print" tabindex="-1">
+	    <div class="modal-header">
+	        <a class="close" data-dismiss="modal">&times;</a>
+	        <h3 class="modal-title"></h3>
+	    </div>
+	    <div class="modal-body"><div class="modal-image"></div></div>
+	    <div class="modal-footer">
+	        <a class="btn btn-primary modal-next">Next <i class="icon-arrow-right icon-white"></i></a>
+	        <a class="btn btn-info modal-prev"><i class="icon-arrow-left icon-white"></i> Previous</a>
+	        <a class="btn btn-success modal-play modal-slideshow" data-slideshow="5000"><i class="icon-play icon-white"></i> Slideshow</a>
+	        <a class="btn modal-download" target="_blank"><i class="icon-download"></i> Download</a>
+	    </div>
+	</div>
+	<!-- // Modal Gallery END -->
+
+	
+	<!-- DataTables Tables Plugin -->
+	<script src="common/theme/scripts/plugins/tables/DataTables/media/js/jquery.dataTables.min.js" async defer></script>
+	<script src="common/theme/scripts/plugins/tables/DataTables/media/js/DT_bootstrap.js" async defer></script>
+	
+	<!-- Tables Demo Script -->
+
+</body>
+</html>

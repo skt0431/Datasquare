@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="ie lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html class="ie gt-ie8"> <![endif]-->
+<!--[if !IE]><!--><html><!-- <![endif]-->
+<head>
+	<title>DataSquare</title>
+	
+	<!-- Meta -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+	
+	<!-- Bootstrap -->
+	<link href="common/bootstrap/css/bootstrap.css" rel="stylesheet" />
+	<link href="common/bootstrap/css/responsive.css" rel="stylesheet" />
+	
+	<!-- Glyphicons Font Icons -->
+	<link href="common/theme/css/glyphicons.css" rel="stylesheet" />
+	
+	<!-- Uniform Pretty Checkboxes -->
+	<link href="common/theme/scripts/plugins/forms/pixelmatrix-uniform/css/uniform.default.css" rel="stylesheet" />
+	
+	<!--[if IE]><!--><script src="common/theme/scripts/plugins/other/excanvas/excanvas.js"></script><!--<![endif]-->
+	<!--[if lt IE 8]><script src="common/theme/scripts/plugins/other/json2.js"></script><![endif]-->
+	
+	<!-- Bootstrap Extended -->
+	<link href="common/bootstrap/extend/jasny-bootstrap/css/jasny-bootstrap.min.css" rel="stylesheet">
+	<link href="common/bootstrap/extend/jasny-bootstrap/css/jasny-bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="common/bootstrap/extend/bootstrap-wysihtml5/css/bootstrap-wysihtml5-0.0.2.css" rel="stylesheet">
+	<link href="common/bootstrap/extend/bootstrap-select/bootstrap-select.css" rel="stylesheet" />
+	<link href="common/bootstrap/extend/bootstrap-toggle-buttons/static/stylesheets/bootstrap-toggle-buttons.css" rel="stylesheet" />
+	
+	<!-- Select2 Plugin -->
+	<link href="common/theme/scripts/plugins/forms/select2/select2.css" rel="stylesheet" />
+	
+	<!-- DateTimePicker Plugin -->
+	<link href="common/theme/scripts/plugins/forms/bootstrap-datetimepicker/css/datetimepicker.css" rel="stylesheet" />
+	
+	<!-- JQueryUI -->
+	<link href="common/theme/scripts/plugins/system/jquery-ui/css/smoothness/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" />
+	
+	<!-- MiniColors ColorPicker Plugin -->
+	<link href="common/theme/scripts/plugins/color/jquery-miniColors/jquery.miniColors.css" rel="stylesheet" />
+	
+	<!-- Notyfy Notifications Plugin -->
+	<link href="common/theme/scripts/plugins/notifications/notyfy/jquery.notyfy.css" rel="stylesheet" />
+	<link href="common/theme/scripts/plugins/notifications/notyfy/themes/default.css" rel="stylesheet" />
+	
+	<!-- Gritter Notifications Plugin -->
+	<link href="common/theme/scripts/plugins/notifications/Gritter/css/jquery.gritter.css" rel="stylesheet" />
+	
+	<!-- Easy-pie Plugin -->
+	<link href="common/theme/scripts/plugins/charts/easy-pie/jquery.easy-pie-chart.css" rel="stylesheet" />
+
+	<!-- Google Code Prettify Plugin -->
+	<link href="common/theme/scripts/plugins/other/google-code-prettify/prettify.css" rel="stylesheet" />
+
+	<!-- Bootstrap Image Gallery -->
+	<link href="common/bootstrap/extend/bootstrap-image-gallery/css/bootstrap-image-gallery.min.css" rel="stylesheet" />
+	
+	<!-- Main Theme Stylesheet :: CSS -->
+	<link href="common/theme/css/style-dark.css?1369753442" rel="stylesheet" />
+	
+	
+	<!-- LESS.js Library -->
+	<script src="common/theme/scripts/plugins/system/less.min.js"></script>
+</head>
+<body class="">
+	
+		<!-- Main Container Fluid -->
+	<div class="container-fluid fluid menu-left">
+		
+		<!-- Top navbar (note: add class "navbar-hidden" to close the navbar by default) -->
+		<div class="navbar main hidden-print">
+		
+			<!-- Wrapper -->
+			<div class="wrapper">
+			
+							
+								<!-- Menu Toggle Button -->
+				<button type="button" class="btn btn-navbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				<!-- // Menu Toggle Button END -->
+								
+								<!-- Top Menu -->
+				<ul class="topnav pull-left tn1 hidden-phone">
+				
+										<!-- Themer -->
+					<li><a href="#themer" data-toggle="collapse" class="glyphicons eyedropper single-icon"><i></i></a></li>
+					<!-- // Themer END -->
+										
+										
+					<li class="dropdown dd-1 dd-2">
+						<a href="" data-toggle="dropdown">Notifications <span class="count">3</span></a>
+						<ul class="dropdown-menu pull-left">
+							<li><a href="#" class="glyphicons envelope"><i></i> New Email</a></li>
+                            <li><a href="#" class="glyphicons chat"><i></i> 5 Messages</a></li>
+                            <li><a href="#" class="glyphicons conversation"><i></i> 1 New Reply</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+				<!-- // Top Menu END -->
+								
+				<!-- Top Menu Right -->
+				<ul class="topnav pull-right">
+				
+					<!-- Language menu -->
+					<li class="hidden-phone dropdown dd-1 dd-flags" id="lang_nav">
+						<a href="#" data-toggle="dropdown"><img src="common/theme/images/lang/en.png" alt="en" /></a>
+				    	<ul class="dropdown-menu pull-left">
+				      		<li class="active"><a href="?page=index&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark&amp;lang=en" title="English"><img src="common/theme/images/lang/en.png" alt="English"> English</a></li>
+				      		<li><a href="?page=index&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark&amp;lang=ro" title="Romanian"><img src="common/theme/images/lang/ro.png" alt="Romanian"> Romanian</a></li>
+				      		<li><a href="?page=index&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark&amp;lang=it" title="Italian"><img src="common/theme/images/lang/it.png" alt="Italian"> Italian</a></li>
+				      		<li><a href="?page=index&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark&amp;lang=fr" title="French"><img src="common/theme/images/lang/fr.png" alt="French"> French</a></li>
+				      		<li><a href="?page=index&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark&amp;lang=pl" title="Polish"><img src="common/theme/images/lang/pl.png" alt="Polish"> Polish</a></li>
+				    	</ul>
+					</li>
+					<!-- // Language menu END -->
+				
+					<!-- Dropdown -->
+					<li class="dropdown dd-1 visible-desktop">
+						<a href="" data-toggle="dropdown" class="glyphicons shield"><i></i>Get Help <span class="caret"></span></a>
+						<ul class="dropdown-menu pull-right">
+							
+							<li class="dropdown submenu">
+	                    		<a href="#" class="dropdown-toggle glyphicons bell" data-toggle="dropdown"><i></i>Level 2</a>
+								<ul class="dropdown-menu submenu-show submenu-hide pull-left">
+			                        <li class="dropdown submenu">
+			                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2.1</a>
+										<ul class="dropdown-menu submenu-show submenu-hide pull-left">
+											<li><a href="#">Level 2.1.1</a></li>
+	                                    	<li><a href="#">Level 2.1.2</a></li>
+	                                    	<li><a href="#">Level 2.1.3</a></li>
+	                                    	<li><a href="#">Level 2.1.4</a></li>
+			                            </ul>
+			                        </li>
+			                        <li class="dropdown submenu">
+			                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Level 2.2</a>
+			                            <ul class="dropdown-menu submenu-show submenu-hide pull-left">
+											<li><a href="#">Level 2.2.1</a></li>
+			                                <li><a href="#">Level 2.2.2</a></li>
+			                            </ul>
+			                        </li>
+			                    </ul>
+			                </li>
+			                
+			                <li><a href="" class="glyphicons settings"><i></i>Some option</a></li>
+							<li><a href="" class="glyphicons bell"><i></i>Some other option</a></li>
+							<li><a href="" class="glyphicons bell"><i></i>Other option</a></li>
+			                
+						</ul>
+					</li>
+					<!-- // Dropdown END -->
+					
+					<!-- Profile / Logout menu -->
+					<li class="account dropdown dd-1">
+												<a data-toggle="dropdown" href="my_account.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark" class="glyphicons logout lock"><span class="hidden-phone">Tony Stark</span><i></i></a>
+						<ul class="dropdown-menu pull-right">
+							<li><a href="my_account.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark" class="glyphicons cogwheel">Settings<i></i></a></li>
+							<li><a href="my_account.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark" class="glyphicons camera">My Photos<i></i></a></li>
+							<li class="profile">
+								<span>
+									<span class="heading">Profile <a href="my_account.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark" class="pull-right">edit</a></span>
+									<span class="img"></span>
+									<span class="details">
+										<a href="my_account.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark">Tony Stark</a>
+										contact@dreamorbit.com
+									</span>
+									<span class="clearfix"></span>
+								</span>
+							</li>
+							<li>
+								<span>
+									<a class="btn btn-default btn-mini pull-right" href="login.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark">Sign Out</a>
+								</span>
+							</li>
+						</ul>
+											</li>
+					<!-- // Profile / Logout menu END -->
+					
+				</ul>
+				<!-- // Top Menu Right END -->
+				
+								
+				<div class="clearfix"></div>
+			</div>
+			<!-- // Wrapper END -->
+			
+			<span class="toggle-navbar"></span>
+		</div>
+		<!-- Top navbar END -->
+		
+				<!-- Sidebar menu & content wrapper -->
+		<div id="wrapper">
+		
+		<!-- Sidebar Menu -->
+		<div id="menu" class="hidden-phone hidden-print">
+		
+			<!-- Brand -->
+			<a href="index.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark" class="appbrand">Shipping Data Easy!<span></span></a>
+		
+			<!-- Scrollable menu wrapper with Maximum height -->
+			<div class="slim-scroll" data-scroll-height="800px">
+			
+			<!-- Sidebar Profile -->
+			<span class="profile">
+				<p>Welcome <a href="my_account.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark">Tony Stark</a></p>
+			</span>
+			<!-- // Sidebar Profile END -->
+			
+			<!-- Regular Size Menu -->
+			<ul class="menu-0">
+			
+								
+								<!-- Menu Regular Item -->
+				<li class="glyphicons display active"><a href="index.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark"><i></i><span>Dashboard</span></a></li>
+				
+				<!-- Web Analytics START-->
+				<li class="hasSubmenu">
+				
+					<a data-toggle="collapse" class="glyphicons globe" href="#menu_analytics"><i></i><span>Web Analytics</span></a>
+					<ul class="collapse" id="menu_analytics">
+						<li class=""><a href="summary.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark"><span>Summary</span></a></li>
+						<li class=""><a href="fms.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark"><span>FMS</span></a></li>
+						<li class=""><a href="fmsplc.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark"><span>FMSPLC</span></a></li>
+						<li class=""><a href="fmsglobalnet.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark"><span>FMS GlobalNet</span></a></li>
+						<li class=""><a href="browsers.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark"><span>Browsers</span></a></li>
+						<li class=""><a href="errors.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark"><span>Errors</span></a></li>
+						<li class=""><a href="statuscodes.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark"><span>Status Codes</span></a></li>
+						<li class=""><a href="spiders.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark"><span>Spiders</span></a></li>
+					</ul>
+				</li>
+				<!-- Web Analytics END-->
+				
+				<!-- Shipping Data Analytics START-->
+				<li class="hasSubmenu">
+				
+					<a data-toggle="collapse" class="glyphicons cargo" href="#menu_analytics_data"><i></i><span>Data Analytics</span></a>
+					<ul class="collapse" id="menu_analytics_data">
+						<li class=""><a href="datasummary.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark"><span>Summary</span></a></li>
+						<li class=""><a href="cost.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark"><span>Cost Metrics</span></a></li>
+						<li class=""><a href="revenue.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark"><span>Revenue Metrics</span></a></li>
+						<li class=""><a href="service.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-dark"><span>Service Metrics</span></a></li>
+					</ul>
+				</li>
+				<!-- Shipping Data Analytics END-->
+				
+			
+			</ul>
+			<div class="clearfix"></div>
+			<!-- // Regular Size Menu END -->
+			
+			<ul class="menu-1">
+				<li class="hasSubmenu active">
+					<a class="glyphicons wifi_alt" href="#menu-recent-stats" data-toggle="collapse"><i></i><span>Recent stats</span></a>
+					<ul class="collapse in" id="menu-recent-stats">
+						<li><a class="glyphicons envelope" href="#"><i></i><span>5 New Emails</span></a></li>
+						<li><a class="glyphicons chat" href="#"><i></i><span>New Message on 19 Jan</span></a></li>
+						<li><a class="glyphicons user_add" href="#"><i></i><span>10 Users Subscribed</span></a></li>
+						<li><a class="glyphicons cart_in" href="#"><i></i><span>2 Orders worth of &dollar;239</span></a></li>
+						<li><a class="glyphicons single circle_plus" href="#"><i></i><span>View all</span></a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="clearfix"></div>
+			<div class="separator bottom"></div>
+			
+						<!-- Sidebar Stats Widgets -->
+			<div class="widget-sidebar-stats">
+				<strong>3,540</strong>
+				<span>Messages</span>
+				<span class="pull-right sparkline"></span>
+				<div class="clearfix"></div>
+			</div>
+			<div class="widget-sidebar-stats">
+				<strong>2,510,402</strong>
+				<span>Photos</span>
+				<span class="pull-right sparkline"></span>
+				<div class="clearfix"></div>
+			</div>
+			<div class="separator bottom"></div>
+			<!-- // Sidebar Stats Widgets END -->
+			
+			<!-- Stats Widget -->
+			<a href="" class="widget-stats widget-stats-2 widget-stats-easy-pie widget-sidebar-stats txt-single">
+				<div data-percent="90" class="easy-pie primary"><span class="value">90</span>%</div>
+				<span class="txt">Completed tasks</span>
+				<div class="clearfix"></div>
+			</a>
+			<!-- // Stats Widget END -->
+			
+			<div class="widget-sidebar-stats">
+				<h5>Generic widget</h5>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			</div>
+						
+						
+						
+			</div>
+			<!-- // Scrollable Menu wrapper with Maximum Height END -->
+			
+		</div>
+		<!-- // Sidebar Menu END -->
+				
+		<!-- Content -->
+		<div id="content">
+	<h2>Dashboard</h2>
+
+
+		<!-- // Content END -->
+		
+				</div>
+		<div class="clearfix"></div>
+		<!-- // Sidebar menu & content wrapper END -->
+				
+		<div id="footer" class="hidden-print">
+			
+			<!--  Copyright Line -->
+			<div class="copy">&copy; 2012 - 2013 - <a href="http://www.dreamorbit.com">DreamOrbit</a> - All Rights Reserved. </div>
+			<!--  End Copyright Line -->
+	
+		</div>
+		<!-- // Footer END -->
+		
+	</div>
+	<!-- // Main Container Fluid END -->
+	
+
+<!-- Themer -->
+<div id="themer" class="collapse">
+	<div class="wrapper">
+		<span class="close2">&times; close</span>
+		<h4>Themer <span>color options</span></h4>
+		<ul>
+			<li>Theme: <select id="themer-theme" class="pull-right"></select><div class="clearfix"></div></li>
+			<li>Primary Color: <input type="text" data-type="minicolors" data-default="#ffffff" data-slider="hue" data-textfield="false" data-position="left" id="themer-primary-cp" /><div class="clearfix"></div></li>
+			<li>
+				<span class="link" id="themer-custom-reset">reset theme</span>
+				<span class="pull-right"><label>advanced <input type="checkbox" value="1" id="themer-advanced-toggle" /></label></span>
+			</li>
+		</ul>
+		<div id="themer-getcode" class="hide">
+			<hr class="separator" />
+			<button class="btn btn-primary btn-small pull-right btn-icon glyphicons download" id="themer-getcode-less"><i></i>Get LESS</button>
+			<button class="btn btn-inverse btn-small pull-right btn-icon glyphicons download" id="themer-getcode-css"><i></i>Get CSS</button>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- // Themer END -->
+
+	<!-- Modal Gallery -->
+	<div id="modal-gallery" class="modal modal-gallery hide fade hidden-print" tabindex="-1">
+	    <div class="modal-header">
+	        <a class="close" data-dismiss="modal">&times;</a>
+	        <h3 class="modal-title"></h3>
+	    </div>
+	    <div class="modal-body"><div class="modal-image"></div></div>
+	    <div class="modal-footer">
+	        <a class="btn btn-primary modal-next">Next <i class="icon-arrow-right icon-white"></i></a>
+	        <a class="btn btn-info modal-prev"><i class="icon-arrow-left icon-white"></i> Previous</a>
+	        <a class="btn btn-success modal-play modal-slideshow" data-slideshow="5000"><i class="icon-play icon-white"></i> Slideshow</a>
+	        <a class="btn modal-download" target="_blank"><i class="icon-download"></i> Download</a>
+	    </div>
+	</div>
+	<!-- // Modal Gallery END -->
+	
+	<!-- JQuery -->
+	<script src="common/theme/scripts/plugins/system/jquery.min.js"></script>
+	
+	<!-- JQueryUI -->
+	<script src="common/theme/scripts/plugins/system/jquery-ui/js/jquery-ui-1.9.2.custom.min.js"></script>
+	
+	<!-- JQueryUI Touch Punch -->
+	<!-- small hack that enables the use of touch events on sites using the jQuery UI user interface library -->
+	<script src="common/theme/scripts/plugins/system/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+	
+	
+	<!-- Modernizr -->
+	<script src="common/theme/scripts/plugins/system/modernizr.js"></script>
+	
+	<!-- Bootstrap -->
+	<script src="common/bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- SlimScroll Plugin -->
+	<script src="common/theme/scripts/plugins/other/jquery-slimScroll/jquery.slimscroll.min.js"></script>
+	
+	<!-- Common Demo Script -->
+	<script src="common/theme/scripts/demo/common.js?1369753442"></script>
+	
+	<!-- Holder Plugin -->
+	<script src="common/theme/scripts/plugins/other/holder/holder.js"></script>
+	
+	<!-- Uniform Forms Plugin -->
+	<script src="common/theme/scripts/plugins/forms/pixelmatrix-uniform/jquery.uniform.min.js"></script>
+
+	<!-- Global -->
+	<script>
+	var basePath = 'common/';
+	</script>
+	
+	<!-- Bootstrap Extended -->
+	<script src="common/bootstrap/extend/bootstrap-select/bootstrap-select.js"></script>
+	<script src="common/bootstrap/extend/bootstrap-toggle-buttons/static/js/jquery.toggle.buttons.js"></script>
+	<script src="common/bootstrap/extend/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.min.js"></script>
+	<script src="common/bootstrap/extend/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
+	<script src="common/bootstrap/extend/jasny-bootstrap/js/bootstrap-fileupload.js"></script>
+	<script src="common/bootstrap/extend/bootbox.js"></script>
+	<script src="common/bootstrap/extend/bootstrap-wysihtml5/js/wysihtml5-0.3.0_rc2.min.js"></script>
+	<script src="common/bootstrap/extend/bootstrap-wysihtml5/js/bootstrap-wysihtml5-0.0.2.js"></script>
+	
+	<!-- Google Code Prettify -->
+	<script src="common/theme/scripts/plugins/other/google-code-prettify/prettify.js"></script>
+	
+	<!-- Gritter Notifications Plugin -->
+	<script src="common/theme/scripts/plugins/notifications/Gritter/js/jquery.gritter.min.js"></script>
+	
+	<!-- Notyfy Notifications Plugin -->
+	<script src="common/theme/scripts/plugins/notifications/notyfy/jquery.notyfy.js"></script>
+	
+	<!-- MiniColors Plugin -->
+	<script src="common/theme/scripts/plugins/color/jquery-miniColors/jquery.miniColors.js"></script>
+	
+	<!-- DateTimePicker Plugin -->
+	<script src="common/theme/scripts/plugins/forms/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+	<!-- Cookie Plugin -->
+	<script src="common/theme/scripts/plugins/system/jquery.cookie.js"></script>
+	
+	<!-- Colors -->
+	<script>
+	var primaryColor = '#8ec657',
+		dangerColor = '#b55151',
+		successColor = '#609450',
+		warningColor = '#ab7a4b',
+		inverseColor = '#45484d';
+	</script>
+	
+	<!-- Themer -->
+	<script>
+	var themerPrimaryColor = primaryColor;
+	</script>
+	<script src="common/theme/scripts/demo/themer.js"></script>
+	
+	<!-- Twitter Feed -->
+	<script src="common/theme/scripts/demo/twitter.js"></script>
+	
+	<!-- Easy-pie Plugin -->
+	<script src="common/theme/scripts/plugins/charts/easy-pie/jquery.easy-pie-chart.js"></script>
+	
+	<!-- Sparkline Charts Plugin -->
+	<script src="common/theme/scripts/plugins/charts/sparkline/jquery.sparkline.min.js"></script>
+	
+	<!-- Ba-Resize Plugin -->
+	<script src="common/theme/scripts/plugins/other/jquery.ba-resize.js"></script>
+	
+	<!-- Dashboard Demo Script -->
+	<script src="common/theme/scripts/demo/index.js?1369753442"></script>
+	
+	<!-- Google JSAPI -->
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		
+	<!--  Flot Charts Plugin -->
+	<script src="common/theme/scripts/plugins/charts/flot/jquery.flot.js"></script>
+	<script src="common/theme/scripts/plugins/charts/flot/jquery.flot.pie.js"></script>
+	<script src="common/theme/scripts/plugins/charts/flot/jquery.flot.tooltip.js"></script>
+	<script src="common/theme/scripts/plugins/charts/flot/jquery.flot.selection.js"></script>
+	<script src="common/theme/scripts/plugins/charts/flot/jquery.flot.resize.js"></script>
+	<script src="common/theme/scripts/plugins/charts/flot/jquery.flot.orderBars.js"></script>
+	
+	<!-- Charts Helper Demo Script -->
+	<script src="common/theme/scripts/demo/charts.helper.js?1369753442"></script>
+	
+	
+	<!-- Bootstrap Image Gallery -->
+	<script src="https://github.com/blueimp/JavaScript-Load-Image/blob/master/js/load-image.min.js"></script>
+	<script src="common/bootstrap/extend/bootstrap-image-gallery/js/bootstrap-image-gallery.min.js" type="text/javascript"></script>
+
+</body>
+</html>

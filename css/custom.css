@@ -1,0 +1,43 @@
+@CHARSET "ISO-8859-1";
+
+#load{
+	text-align: center;
+	width: 100%;
+	top: 135px;
+	position: absolute;
+}
+.load{
+	text-align: center;
+	width: 100%;
+	top: 135px;
+	position: absolute;
+}
+.load h4 img{
+	width: 32px;
+	
+}
+#load h4 img{
+	width: 32px;
+	transform:rotateY(180deg);
+	-webkit-transform:rotateY(180deg);
+}
+#revenue{
+	height:230px;
+	width:100%;
+}
+#cost{
+	height:230px;
+	width:100%;
+}
+#profit{
+	height:230px;
+	width:100%;
+}
+/* .totalCPR div strong{
+	font-size: 15px;
+} */
+.activeType {
+	border-color: orange !important;
+	background: orange !important;
+	color:black !important
+}

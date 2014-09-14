@@ -1,0 +1,337 @@
+@CHARSET "ISO-8859-1";
+
+.ajax_loader {
+	background: url("../images/spinner_squares_circle.gif") no-repeat center
+		center transparent;
+	width: 400%;
+	height: 400%;
+}
+
+body {
+	color: #333333;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	font-size: 1em;
+	/*position: absolute;*/
+	background: #f4f4f4 url(../images/SubtlePatterns.jpg);
+	/*background: url(../images/wild_oliva.png) left top repeat;*/
+}
+
+h2 {
+	color: #333333;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	font-size: 1.5em;
+	top: 15px;
+	text-align: center;
+}
+
+.top-proj{
+	postion: absolute;
+	margin-left: 40%;
+}
+select {
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+	-webkit-padding-end: 20px;
+	-webkit-padding-start: 2px;
+	-webkit-user-select: none;
+	-webkit-linear-gradient: (#E1E1E1, #FFF 30%, #FFF );
+	border: 1px solid #CCC;
+	color: #999;
+	font-size: 90%;
+	font-family: Comfortaa, Arial, Helvetica, sans-serif;
+	overflow: hidden;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: default;
+	z-index: 1;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 0.7em 0.7em 0.7em 0.7em;
+	box-shadow: 2px 2px 2px #ccc;
+	text-overflow: ellipsis;
+	padding: 10px;
+	width: 13em !important;
+}
+
+@
+-moz-document url-prefix                     () {select {
+	border-radius: 5px;
+	border: 1px solid #CCC;
+	color: #000;
+	font-size: 90%;
+	font-family: Comfortaa, Arial, Helvetica, sans-serif;
+	margin: 0;
+	height: auto;
+	width: 50px;
+	padding: 10px;
+}
+
+}
+select:hover {
+	background: #ddd;
+	-moz-box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+	box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+	color: #999;
+}
+
+body:nth-of-type(1) #grid ul li {
+	list-style-type: none;
+	padding: 0 0 0 45px;
+	position: relative;
+}
+
+body:nth-of-type(1) #grid ul li:before { /*fill it with a blank space*/
+	content: "\00a0";
+	/*make it a block element*/
+	display: block;
+	/*adding an 8px round border to a 0x0 element creates an 8px circle*/
+	border: solid 9px #000;
+	border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	height: 0;
+	width: 0;
+	/*Now position it on the left of the list item, and center it vertically
+	(so that it will work with multiple line list-items)*/
+	position: absolute;
+	left: 7px;
+	top: 40%;
+	margin-top: -8px;
+}
+
+body:nth-of-type(1) #grid ul li:after {
+	/*Add another block-level blank space*/
+	content: "\00a0";
+	display: block;
+	/*Make it a small rectangle so the border will create an L-shape*/
+	width: 3px;
+	height: 6px;
+	/*Add a white border on the bottom and left, creating that 'L' */
+	border: solid #fff;
+	border-width: 0 2px 2px 0;
+	/*Position it on top of the circle*/
+	position: absolute;
+	left: 14px;
+	top: 40%;
+	margin-top: -4px;
+	/*Rotate the L 45 degrees to turn it into a checkmark*/
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}
+
+.bullets {
+	margin-left: 5%;
+	position: relative;
+	vertical-align: center;
+}
+
+.green {
+	-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 0.7em 0.7em 0.7em 0.7em;
+	box-shadow: 2px 2px 2px #ccc;
+	color: #999;
+	text-overflow: ellipsis;
+	cursor: pointer;
+	padding: 10px;
+	width: 5em;
+}
+
+.top-buttons {
+	-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 0.7em 0.7em 0.7em 0.7em;
+	box-shadow: 2px 2px 2px #ccc;
+	color: #999;
+	text-overflow: ellipsis;
+	cursor: pointer;
+	padding: 10px;
+	width: 12em;
+}
+
+.stats-buttons {
+	-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 0.7em 0.7em 0.7em 0.7em;
+	box-shadow: 2px 2px 2px #ccc;
+	color: #999;
+	text-overflow: ellipsis;
+	cursor: pointer;
+	padding: 10px;
+	width: 10em;
+}
+
+.browsers-buttons {
+	-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 0.7em 0.7em 0.7em 0.7em;
+	box-shadow: 2px 2px 2px #ccc;
+	color: #999;
+	text-overflow: ellipsis;
+	cursor: pointer;
+	padding: 10px;
+	width: 12em;
+	font-weight : bold;
+}
+
+/*button:hover,a.button:hover {
+	border-radius: 9px; 
+	-moz-border-radius: 9px; 
+	-webkit-border-radius: 9px; 
+	border: 2px solid #FFFFFF;
+}*/
+
+.container {
+	float: left;
+	width: 100%;
+}
+
+.container div {
+	float: left;
+	text-align: center;
+}
+
+.chart {
+	width: 700px;
+	height: 400px;
+	margin-left: 15px;
+	border: 1px solid;
+	border-radius: 1em 1em 1em 1em;
+	-moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+	-webkit-box-shadow: 1px 1px 2px rgba(1, 1, 1, 1.2);
+	box-shadow: 3 3 3px rgba(1, 1, 1, 1.2);
+	-moz-box-shadow: 0 5px 10px #ccc;
+	-webkit-box-shadow: 0 5px 10px #ccc;
+	zoom: 1;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#dddddd,
+		direction=0, strength=1 ), progid:DXImageTransform.Microsoft.Shadow(color=#dddddd,
+		direction=45, strength=1 ), progid:DXImageTransform.Microsoft.Shadow(color=#dddddd,
+		direction=90, strength=2 ), progid:DXImageTransform.Microsoft.Shadow(color=#dddddd,
+		direction=135, strength=3 ), progid:DXImageTransform.Microsoft.Shadow(color=#dddddd,
+		direction=180, strength=3 ), progid:DXImageTransform.Microsoft.Shadow(color=#dddddd,
+		direction=225, strength=3 ), progid:DXImageTransform.Microsoft.Shadow(color=#dddddd,
+		direction=270, strength=2 ), progid:DXImageTransform.Microsoft.Shadow(color=#dddddd,
+		direction=315, strength=1 );
+}
+
+body:last-child .chart { /* Remove filter from IE9 */
+	filter: none;
+}
+
+.tabp {
+	width: 45%;
+	margin-left: 3%;
+	right: 0%;
+	vertical-align: top;
+}
+
+.tableGrid {
+	margin-left: 3%;
+	vertical-align: top;
+	width: 49%
+}
+
+/* 
+Rounded Corner Styles 
+*/
+#rounded-corner {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	margin-top: 3px;
+	font-size: 12px;
+	width: auto;
+	text-align: left;
+	border-collapse: collapse;
+	float: left;
+	font-size: 12px;
+}
+
+#rounded-corner th {
+	padding: 8px;
+	font-weight: normal;
+	font-size: 12px;
+	color: #FFF;
+	background: #539CCC;
+}
+
+#rounded-corner td {
+	padding: 8px;
+	background: #D0E5F5;
+	border-top: 1px solid #fff;
+	color: #1D59A0;
+}
+
+#rounded-corner tbody tr:hover td {
+	background: #539CCC;
+	color: #FFF
+}
+
+th:first-child {
+	-moz-border-radius: 6px 0 0 0;
+	-webkit-border-radius: 6px 0 0 0;
+	border-radius: 6px 0 0 0;
+}
+
+th:last-child {
+	-moz-border-radius: 0 6px 0 0;
+	-webkit-border-radius: 0 6px 0 0;
+	border-radius: 0 6px 0 0;
+}
+
+th:only-child {
+	-moz-border-radius: 6px 6px 0 0;
+	-webkit-border-radius: 6px 6px 0 0;
+	border-radius: 6px 6px 0 0;
+}
+#footer{
+	position: absolute; 
+	bottom: 0; 
+	top: 93%;
+	left: 45%; 
+	margin-left: -100px;
+}
+
+.piecharts{
+	position: relative; 
+	float: left;
+	height:300px; 
+	width:400px;
+}
+.stats-piecharts{
+	position: relative; 
+	float: left;
+	height:300px; 
+	width:400px;
+	margin-top: 10px;
+}
+table.hovertable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+}
+.hovertable th {
+	background-color:#c3dde0;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+.hovertable tr {
+	background-color:#d4e3e5;
+}
+.hovertable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}

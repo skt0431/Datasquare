@@ -1,0 +1,30 @@
+<style type="text/css">
+thead {color:green;text-align:center;}
+tbody {color:blue;}
+</style>
+<input type="file" id="files" name="files[]" multiple />
+<output id="list"></output>
+<h4>Sorry Uploading service is not yet ready</h4>
+<script>
+  function handleFileSelect(evt) {
+    var files = evt.target.files; // FileList object
+
+    // files is a FileList of File objects. List some properties.
+    var output = [];
+
+     output.push('<caption><b><i>List and Details Of all the Files </b></i></caption>','<thead>','<tr><td>','File Name', '</td><td> ','Type', '</td><td> ',
+                  'Size', 'Bytes </td><td> ',
+                  'Modified Date',
+                  '</td></tr></thead>');
+	console.log(evt.targets);
+    for (var i = 0, f; f = files[i]; i++) {
+      output.push('<tbody><tr><td>', escape(f.name), '</td><td> ', f.type || 'n/a', '</td><td> ',
+                  f.size, 'Bytes </td><td> ',
+                  f.lastModifiedDate ? f.lastModifiedDate.toLocaleDateString() : 'n/a',
+                  '</td></tr></tbody>');
+    }
+    document.getElementById('list').innerHTML = '<table border="4">' + output.join('') + '</table>';
+  }
+
+  document.getElementById('files').addEventListener('change', handleFileSelect, false);
+</script>

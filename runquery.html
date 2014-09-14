@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Run Hive Queries here</title>
+<script src="common/theme/scripts/plugins/system/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(
+			function() {
+
+				$('#Run').live("click", function() {
+					getQuery($("#query").val().replace(";", ""))
+				});
+
+				function getQuery(request) {
+					$.ajax({
+						type : 'GET',
+						url : "rest/search/runQuery",
+						data : {
+							query : request
+						},
+						dataType : 'json',
+						beforeSend : function() {
+							$("#result").empty()
+							$("#result").text("Running")
+						},
+						complete : function() {
+
+						},
+						success : function(data) {
+							var table = "<div>"
+							for ( var i = 0; i < data.results.length; i++) {
+								table += "<h5>"
+										+ JSON.stringify(data.results[i])
+										+ "<h5>"
+							}
+							table += "</div>";
+							$("#result").empty()
+							$("#result").append(table);
+						},
+						error : function(xhr, data, statusText, errorThrown) {
+							// log the error to the console
+							$("#result").empty()
+							$("#result").text("Error")
+							console.log("The following error occured: "
+									+ statusText, errorThrown);
+						}
+
+					});
+				}
+
+			});
+</script>
+</head>
+<body style="text-align: center">
+	<h2>
+		Enter the query and run the query . . .
+		</h5>
+		<textarea rows="3" cols="60" id="query"></textarea>
+		<br>
+		<button type="button" id="Run">Run Query</button>
+		<br>
+		<p>
+			Note : <b> USE</b> query will not be effected <br> <i>Eg :
+				select * from logic.Table_name</i>
+		</p>
+		<br>
+		<div style="width: 100%" id="result">
+			</textarea>
+</body>
+</html>
